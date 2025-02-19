@@ -912,3 +912,24 @@ img {
 .bg-light.rounded {
     background-color: white !important; /* Ensures pure white background */
 }
+
+
+
+
+
+html, body {
+    height: 100%;
+    overflow-y: hidden; /* Hide the scrollbar */
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    overflow-y: scroll; /* Enable scrolling without scrollbar */
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+body::-webkit-scrollbar {
+    width: 0; /* Hide scrollbar in Chrome, Safari, Edge */
+    display: none;
+}
