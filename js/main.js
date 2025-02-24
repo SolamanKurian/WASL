@@ -1,3 +1,6 @@
+
+
+
 (function ($) {
     "use strict";
 
@@ -13,7 +16,7 @@
     
     
     // Initiate the wowjs
-    new WOW().init();
+    // new WOW().init();
 
 
     // Sticky Navbar
@@ -26,7 +29,7 @@
     });
 
     // Facts counter
-    $('[data-toggle="counter-up"]').counterUp({
+    $('[data-bs-toggle="counter-up"]').counterUp({
         delay: 5,
         time: 2000
     });
@@ -38,7 +41,7 @@
         $('.btn-play').click(function () {
             $videoSrc = $(this).data("src");
         });
-        console.log($videoSrc);
+        
 
         $('#videoModal').on('shown.bs.modal', function (e) {
             $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
